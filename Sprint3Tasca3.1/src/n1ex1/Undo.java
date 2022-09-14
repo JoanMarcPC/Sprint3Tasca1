@@ -14,7 +14,6 @@ public class Undo {
 	public static Undo getInstance() {
 		if (instance == null) {
 			instance = new Undo();
-
 		}
 		return instance;
 	}
@@ -34,15 +33,12 @@ public class Undo {
 	}
 
 	public void removeCommand(String command) {
-		boolean aux = false;
-		for (int i = 0; i < this.commands.size() && aux == false; i++) {
-			if (this.commands.get(i).equalsIgnoreCase(command)) {
-				aux = true;
-				this.commands.remove(i);
-			}
-		}
+		this.commands.clear();
 	}
 	public String getLastCommand() {
-		return this.commands.get(this.commands.size());
+		if(commands.isEmpty()) {
+		return "Command list empty";
 	}
+	return this.commands.get(this.commands.size());
+}
 }
