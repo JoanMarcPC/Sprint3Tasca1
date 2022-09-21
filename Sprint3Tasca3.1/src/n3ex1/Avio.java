@@ -1,13 +1,9 @@
 package n3ex1;
 
-public class Avio {
-	public void arrencar() {
-		System.out.println("Avio arrencant");
+public class Avio extends Vehicle {
+	public Avio(String nom) {
+		super(nom);
+		// TODO Auto-generated constructor stub
 	}
-	public void frenar() {
-		System.out.println("Avio frenant");
-	}
-	public void accelerar() {
-		System.out.println("Avio accelerant");
-	}
+
 }

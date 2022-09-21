@@ -13,8 +13,8 @@ public class Main {
 		Scanner entrada = new Scanner(System.in);
 		Undo objectSingleton = Undo.getInstance();
 		System.out.println(
-				"Comandos disponibles:\n - last: ver ultimo command\n - show: ver todos los commands guardados\n - remove: borrar todos los commands guardados\n - exit: salir");
-		// si no posa cap de les opcions de comandes, s'entèn que es una comanda normal
+				"Comandos disponibles:\n - last: ver ultimo command\n - show: ver todos los commands guardados\n - remove: borrar todos los commands guardados\n - exit: salir\n Cualquier otra palabra se guardara como comando");
+		// si no posa cap de les opcions de comandes, s'entï¿½n que es una comanda normal
 		// i ha de ser guardada.
 
 		do {

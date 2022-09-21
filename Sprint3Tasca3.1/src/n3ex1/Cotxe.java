@@ -1,14 +1,9 @@
 package n3ex1;
 
-public class Cotxe {
+public class Cotxe extends Vehicle {
 
-	public void arrencar() {
-		System.out.println("Cotxe arrencant");
-	}
-	public void frenar() {
-		System.out.println("Cotxe frenant");
-	}
-	public void accelerar() {
-		System.out.println("Cotxe accelerant");
+	public Cotxe(String nom) {
+		super(nom);
+		// TODO Auto-generated constructor stub
 	}
 }
