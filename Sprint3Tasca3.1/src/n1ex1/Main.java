@@ -7,8 +7,6 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ArrayList<String> commands = new ArrayList<String>();
-		commands.clear();
 		String command;
 		Scanner entrada = new Scanner(System.in);
 		Undo objectSingleton = Undo.getInstance();
